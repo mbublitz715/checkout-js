@@ -83,7 +83,7 @@ const OrderSummaryModal: FunctionComponent<
             <OrderSummaryItems displayLineItemsCount={false} items={items} />
         </OrderSummarySection>
         <OrderSummarySection>
-            <OrderSummarySubtotals isTaxIncluded={isTaxIncluded} taxes={taxes} {...orderSummarySubtotalsProps} />
+            <OrderSummarySubtotals isTaxIncluded={isTaxIncluded} taxes={taxes} {...orderSummarySubtotalsProps} items={items} />
             {additionalLineItems}
         </OrderSummarySection>
         <OrderSummarySection>

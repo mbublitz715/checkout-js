@@ -30,11 +30,11 @@ const EditLink: FunctionComponent<EditLinkProps> = ({ className, url, isMultiShi
                 <a
                     className={className || 'cart-header-link'}
                     data-test="cart-edit-link"
-                    href="#"
+                    href="https://kardia-website-next-k8s.development.alivecor.net/cart"
                     id="cart-edit-link"
                     onClick={preventDefault(() => setIsModalOpen(true))}
                 >
-                    <TranslatedString id="cart.edit_cart_action" />
+                    New Edit Cart
                 </a>
             </>
         );
@@ -44,7 +44,7 @@ const EditLink: FunctionComponent<EditLinkProps> = ({ className, url, isMultiShi
         <a
             className={className || 'cart-header-link'}
             data-test="cart-edit-link"
-            href={url}
+            href="https://kardia-website-next-k8s.development.alivecor.net/cart"
             id="cart-edit-link"
             target="_top"
         >

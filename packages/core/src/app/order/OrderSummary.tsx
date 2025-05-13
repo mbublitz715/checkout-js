@@ -51,7 +51,7 @@ const OrderSummary: FunctionComponent<OrderSummaryProps & OrderSummarySubtotalsP
             <Extension region={ExtensionRegion.SummaryLastItemAfter} />
 
             <OrderSummarySection>
-                <OrderSummarySubtotals isTaxIncluded={isTaxIncluded} taxes={taxes} {...orderSummarySubtotalsProps} />
+                <OrderSummarySubtotals isTaxIncluded={isTaxIncluded} taxes={taxes} {...orderSummarySubtotalsProps} items={lineItems} />
                 {additionalLineItems}
             </OrderSummarySection>
 
